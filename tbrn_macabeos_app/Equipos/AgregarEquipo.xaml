@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="tbrn_macabeos_app.Equipos.AgregarEquipo">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Image Source="taber.png"
+               FlexLayout.Order="-1"
+               FlexLayout.AlignSelf="Center"
+                           WidthRequest="180"
+                           HeightRequest="180" Aspect="AspectFit" />
+            <Label>
+
+            </Label>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor=" #b30000"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Agregar Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Serial de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Entry 
+        Placeholder="Numero de Serial"
+        x:Name="txtSerial"   
+        HorizontalTextAlignment="Center"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Numero de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Entry 
+        Placeholder="Numero de Radio"
+        x:Name="txtNumero"   
+        HorizontalTextAlignment="Center"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        BackgroundColor="#507BF5"
+        Margin="15,10,15,10" 
+        HasShadow="False"
+        >
+                <Label 
+        Margin="5"
+        Text="Observaciones de Radio" 
+        HorizontalOptions="Center" 
+        BackgroundColor="Transparent"
+        FontSize="Large" 
+        TextColor="White"
+        FontAttributes="Bold"
+        />
+            </Frame>
+            <Frame
+        CornerRadius="15"
+        Padding="0"
+        Margin="15,10,15,10"
+         >
+                <Entry 
+        Placeholder="Observaciones de Radio"
+        x:Name="txtObservacion"   
+        HorizontalTextAlignment="Center"
+        />
+            </Frame>
+            <Button 
+              BorderColor="#507BF5"
+              BorderRadius="5"
+              BorderWidth="2"
+              Margin="15,10,15,10"
+              x:Name="bntAgregarRadio"
+              Text="Agregar Radio"
+              TextColor="White" 
+              BackgroundColor="#507BF5"
+              Clicked="bntAgregarRadio_click"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
